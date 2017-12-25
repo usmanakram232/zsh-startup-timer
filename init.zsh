@@ -2,7 +2,7 @@ startup_timer_module_path="$0:a:h"
 
 print_startup_time () {
   print -n "Startup time: "
-  python "$startup_timer_module_path/startup_timer.py" 2>/dev/null
+  python3 "$startup_timer_module_path/startup_timer.py" 2>/dev/null
   (( $status )) && print -n '???  (Did you "pip install psutil"?)'
   print
 
